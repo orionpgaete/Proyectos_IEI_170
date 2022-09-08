@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Plantilla</title>
+</head>
+<body>
+        <h1 style="color: red">Hola Alumnos estas cargando una plantillas Django</h1>
+        <p>Mi nombre es : {{nom_persona}} {{apel_persona}}</p>
+        <p>La hora de tu papa es: {{fecha.day}}.{{fecha.month}}.{{fecha.year}}  {{fecha.hour}}:{{fecha.minute}}</p>
+        
+        <p>
+            <ul>
+            {% if temas %}
+                {% for elTema in temas %}
+                    <li>{{elTema}}</li>
+                {% endfor %}
+            {% else %}
+                <p>No hay elementos que mostrar</p>
+            {% endif %}
+            </ul>
+        </p>
+
+    </body>
+</html>
+
