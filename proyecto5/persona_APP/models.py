@@ -8,4 +8,15 @@ class Persona(models.Model):
     email = models.EmailField()
     telefono = models.CharField(max_length=20)
 
+
+class Proyecto(models.Model):
+    fechaInicio = models.DateField()
+    fechaTermino = models.DateField()
+    nombre = models.CharField(max_length=50)
+    responsable = models.CharField(max_length=50)
+    prioridad = models.IntegerField()
+
+    
+
+
     

@@ -20,4 +20,9 @@ from persona_APP import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('personas/', views.listapersona),
+    path('', views.index),
+    path('proyectos/', views.listarproyecto),
+    path('agregarproyecto', views.agregarproyecto),
+    path('eliminar/<int:id>', views.eliminarProyecto),
+    path('actualizar/<int:id>', views.actualizaProyecto),
 ]
